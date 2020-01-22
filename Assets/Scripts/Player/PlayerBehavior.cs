@@ -3,17 +3,18 @@ using InputSystem;
 
 namespace Player
 {
-    public class Behavior : MonoBehaviour
+    public class PlayerBehavior : MonoBehaviour
     {
         public PlayerInput playerInput;
-        public float forceFactorX = 10;
-        public float forceFactorY = 10;
+        public float forceFactorX = 1f;
+        public float forceFactorY = 1f;
 
-        private Rigidbody2D _rigidbody2D;
+        private Rigidbody2D rigidbody2D;
         
         private void Awake()
         {
-            _rigidbody2D = GetComponent<Rigidbody2D>();
+            rigidbody2D = GetComponent<Rigidbody2D>();
+            rigidbody2D.freezeRotation = true;
         }
 
         private void OnEnable()
@@ -28,7 +29,7 @@ namespace Player
 
         private void Jump()
         {
-            _rigidbody2D.AddForce(new Vector2(forceFactorX, forceFactorY), ForceMode2D.Impulse );
+            rigidbody2D.AddForce(new Vector2(forceFactorX, forceFactorY), ForceMode2D.Impulse );
         }
     }
 }
