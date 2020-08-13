@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="BuildClass.cs" t="Include" />
+          <e p="ExampleWindow.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Obstacles" t="Include">
             <e p="Booster.cs" t="Include" />
@@ -33,7 +38,7 @@
       <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_sleepy-bouncer.-237175186.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_sleepy-bouncer.-662762940.00" t="ExcludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
   </component>
 </project>
