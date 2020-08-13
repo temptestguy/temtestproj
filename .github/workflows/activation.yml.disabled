@@ -1,8 +1,5 @@
 name: Acquire activation file
-on: 
-  push:
-    branches-ignore:
-      - '**'
+on: push
 jobs:
   activation:
     name: Request manual activation file 🔑
