@@ -30,7 +30,7 @@ jobs:
           UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
         with:
           unityVersion: 2019.4.7f1
-          targetPlatform: StandaloneLinux
+          targetPlatform: StandaloneLinux64
 
       # Output
       - uses: actions/upload-artifact@v2
